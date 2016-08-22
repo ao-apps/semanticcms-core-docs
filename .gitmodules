@@ -1,0 +1,3 @@
+[submodule "src/main/webapp/semanticcms-core"]
+	path = src/main/webapp/semanticcms-core
+	url = git@github.com:aoindustries/semanticcms-core-book.git
