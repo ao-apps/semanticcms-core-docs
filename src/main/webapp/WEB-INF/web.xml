@@ -6,4 +6,13 @@
   version="3.0"
   metadata-complete="false">
 	<display-name>SemanticCMS Core Docs</display-name>
+	<context-param>
+		<description>
+			When set to "true" and the request is from localhost, enables desktop
+			integration mode by opening files on the server side instead of
+			downloading through the browser.
+		</description>
+		<param-name>com.semanticcms.openfile.servlet.OpenFile.enabled</param-name>
+		<param-value>true</param-value>
+	</context-param>
 </web-app>
