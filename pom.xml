@@ -63,6 +63,12 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<artifactId>semanticcms-core-view-content</artifactId>
 			<version>1.1</version>
 		</dependency>
+		<!-- TODO: Depend on edit view instead once it exists -->
+		<dependency>
+			<groupId>com.semanticcms</groupId>
+			<artifactId>semanticcms-openfile-servlet</artifactId>
+			<version>1.2-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-sitemap-servlet</artifactId>
