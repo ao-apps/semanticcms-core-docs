@@ -79,7 +79,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-sitemap-servlet</artifactId>
+			<artifactId>semanticcms-core-sitemap</artifactId>
 			<version>1.7-SNAPSHOT</version>
 		</dependency>
 		<dependency>
