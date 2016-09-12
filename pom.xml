@@ -27,7 +27,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<parent>
 		<groupId>com.semanticcms</groupId>
 		<artifactId>semanticcms-core</artifactId>
-		<version>1.3</version>
+		<version>1.4-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
@@ -36,7 +36,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>war</packaging>
 
 	<name>SemanticCMS Core Docs</name>
-	<url>https://semanticcms.com/docs/semanticcms-core-docs/</url>
+	<url>https://semanticcms.com/core/docs/</url>
 	<description>Documentation runner for Java API for modeling web page content and relationships.</description>
 
 	<scm>
@@ -62,13 +62,13 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-all</artifactId>
-			<version>1.1</version>
+			<version>1.2-SNAPSHOT</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-theme-documentation-style</artifactId>
-			<version>1.4</version>
+			<version>1.5-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
