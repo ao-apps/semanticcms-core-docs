@@ -47,6 +47,32 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<tag>HEAD</tag>
 	</scm>
 
+	<build>
+		<pluginManagement>
+			<plugins>
+				<!-- Do not pack the war unless "release" profile. -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>3.0.0</version>
+					<executions>
+						<execution>
+							<id>default-war</id>
+							<phase>none</phase>
+						</execution>
+						<execution>
+							<id>war-exploded</id>
+							<phase>package</phase>
+							<goals>
+								<goal>exploded</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>		
+		</pluginManagement>
+	</build>
+
 	<profiles>
 		<profile>
 			<id>release</id>
@@ -55,7 +81,6 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-war-plugin</artifactId>
-						<version>3.0.0</version>
 						<configuration>
 							<overlays>
 								<overlay>
@@ -109,6 +134,17 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 								</overlay>
 							</overlays>
 						</configuration>
+						<!-- Do not pack the war unless "release" profile. -->
+						<executions>
+							<execution>
+								<id>default-war</id>
+								<phase>package</phase>
+							</execution>
+							<execution>
+								<id>war-exploded</id>
+								<phase>none</phase>
+							</execution>
+						</executions>
 					</plugin>
 				</plugins>
 			</build>
