@@ -35,45 +35,29 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<version>1.4.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
+	<properties>
+		<bookPath>/core/docs</bookPath>
+		<shortTitle>Docs</shortTitle>
+		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="${project.parent.parent.url}">${project.parent.parent.name}</a>
+/ <a target="_top" href="${project.parent.url}">Core</a>
+/ <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
+		<description.html><![CDATA[<a target="_top" href="https://support.google.com/webmasters/answer/139066">Canonical URLs</a> for <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
+	</properties>
+
 	<name>SemanticCMS Core Docs</name>
-	<url>https://semanticcms.com/core/docs/</url>
+	<url>https://semanticcms.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
 	<description>Documentation runner for Java API for modeling web page content and relationships.</description>
 	<inceptionYear>2016</inceptionYear>
 
 	<scm>
-		<connection>scm:git:git://github.com/aoindustries/semanticcms-core-docs.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-core-docs.git</developerConnection>
-		<url>https://github.com/aoindustries/semanticcms-core-docs</url>
+		<!-- Can't inherit due to multi-module -->
+		<connection>scm:git:git://github.com/aoindustries/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:git@github.com:aoindustries/${project.artifactId}.git</developerConnection>
+		<url>https://github.com/aoindustries/${project.artifactId}</url>
 		<tag>HEAD</tag>
 	</scm>
 
 	<profiles>
-		<!-- Do not pack the war in "skip-war" profile -->
-		<profile>
-			<id>skip-war</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-war-plugin</artifactId>
-						<version>3.0.0</version>
-						<executions>
-							<execution>
-								<id>default-war</id>
-								<phase>none</phase>
-							</execution>
-							<execution>
-								<id>war-exploded</id>
-								<phase>package</phase>
-								<goals>
-									<goal>exploded</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
 		<profile>
 			<id>release</id>
 			<build>
