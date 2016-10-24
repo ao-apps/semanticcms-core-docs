@@ -3,7 +3,7 @@ Documentation runner for Java API for modeling web page content and relationship
 
 ## Project Links
 * [Project Home](https://semanticcms.com/core/docs/)
-* [Maven Central Repository](https://search.maven.org/#search|gav|1|g:%22com.semanticcms%22%20AND%20a:%22semanticcms-core-docs%22)
+* [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.semanticcms%22%20AND%20a:%22semanticcms-core-docs%22)
 * [GitHub](https://github.com/aoindustries/semanticcms-core-docs)
 
 ## Contact Us
