@@ -24,6 +24,11 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<prerequisites>
+		<!-- 3.2.1 required for wildcard exclusions -->
+		<maven>3.2.1</maven>
+	</prerequisites>
+
 	<parent>
 		<groupId>com.semanticcms</groupId>
 		<artifactId>semanticcms-core</artifactId>
@@ -202,24 +207,28 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<artifactId>semanticcms-core</artifactId>
 			<version>1.5.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-all</artifactId>
 			<version>1.3.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
 			<version>1.0.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-canonical</artifactId>
 			<version>1.0.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<!-- TODO: This is a dependency on self, careful bootstrap issues here, but one trick
 		           is to comment-out this dependency, deploy snapshot, then uncomment -->
@@ -228,48 +237,56 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<artifactId>semanticcms-core-docs</artifactId>
 			<version>1.4.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-model</artifactId>
 			<version>1.8.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-servlet</artifactId>
 			<version>1.9.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-sitemap</artifactId>
 			<version>1.9.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-style</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-taglib</artifactId>
 			<version>1.8.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-theme-base</artifactId>
 			<version>1.2.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-view-content</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 	</dependencies>
 </project>
