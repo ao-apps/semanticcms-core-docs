@@ -134,7 +134,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-servlet</artifactId>
-					<version>1.9.1-SNAPSHOT</version>
+					<version>1.10.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -249,7 +249,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-servlet</artifactId>
-			<version>1.9.1-SNAPSHOT</version>
+			<version>1.10.0-SNAPSHOT</version>
 			<classifier>book</classifier>
 			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>

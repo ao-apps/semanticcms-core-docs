@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<books
+	xmlns="https://semanticcms.com/core/servlet/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://semanticcms.com/core/servlet/ https://semanticcms.com/core/servlet/books-1.0.xsd"
+	rootBook="/core"
+>
+	<missingBook name="/" />
+	<book name="/core" cvsworkDirectory="~/maven2/ao/semanticcms/core/src/main/book-filtered" />
+	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms/core/all/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms/core/breadcrumblist-json-ld/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms/core/canonical/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/docs" cvsworkDirectory="~/maven2/ao/semanticcms/core/docs/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/servlet/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/sitemap" cvsworkDirectory="~/maven2/ao/semanticcms/core/sitemap/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/style" cvsworkDirectory="~/maven2/ao/semanticcms/core/style/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/core/taglib/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/theme-base" cvsworkDirectory="~/maven2/ao/semanticcms/core/theme-base/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/view-content" cvsworkDirectory="~/maven2/ao/semanticcms/core/view-content/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+</books>
