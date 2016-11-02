@@ -207,6 +207,8 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<artifactId>semanticcms-core</artifactId>
 			<version>1.5.1-SNAPSHOT</version>
 			<classifier>book</classifier>
+			<!-- TODO: Try build helper plugin to attach to see if can attach without transitive dependencies
+			           http://www.mojohaus.org/build-helper-maven-plugin/usage.html -->
 			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
