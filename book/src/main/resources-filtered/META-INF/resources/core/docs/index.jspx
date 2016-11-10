@@ -37,7 +37,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	>
 		<core:child page="changelog.jspx" />
 		<p>
-			@{description.html}
+			@{documented.description}
 		</p>
 		<section:section label="Project Links">
 			<ul>
