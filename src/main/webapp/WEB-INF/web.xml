@@ -15,4 +15,13 @@
 		<param-name>com.semanticcms.openfile.servlet.OpenFile.enabled</param-name>
 		<param-value>true</param-value>
 	</context-param>
+
+ 	<mime-mapping>
+		<extension>tld</extension>
+		<mime-type>text/xml</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>xsd</extension>
+		<mime-type>text/xml</mime-type>
+	</mime-mapping>
 </web-app>
