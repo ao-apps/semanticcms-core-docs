@@ -6,6 +6,8 @@
 	rootBook="/core"
 >
 	<missingBook name="/" />
+	<!-- Can't run /core/docs here due to cyclic dependency -->
+	<missingBook name="/core/docs" />
 	<book name="/core" cvsworkDirectory="~/maven2/ao/semanticcms/core/book/src/main/resources-filtered/META-INF/resources/core" />
 	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms/core/all/book/src/main/resources-filtered/META-INF/resources/core/all">
 		<parent book="/core" page="/index.jspx" />
@@ -14,9 +16,6 @@
 		<parent book="/core" page="/index.jspx" />
 	</book>
 	<book name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms/core/canonical/book/src/main/resources-filtered/META-INF/resources/core/canonical">
-		<parent book="/core" page="/index.jspx" />
-	</book>
-	<book name="/core/docs" cvsworkDirectory="~/maven2/ao/semanticcms/core/docs/book/src/main/resources-filtered/META-INF/resources/core/docs">
 		<parent book="/core" page="/index.jspx" />
 	</book>
 	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/book/src/main/resources-filtered/META-INF/resources/core/model">

@@ -24,15 +24,11 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<prerequisites>
-		<!-- 3.2.1 required for wildcard exclusions -->
-		<maven>3.2.1</maven>
-	</prerequisites>
-
 	<parent>
 		<groupId>com.semanticcms</groupId>
-		<artifactId>semanticcms-core</artifactId>
-		<version>1.5.1-SNAPSHOT</version>
+		<artifactId>semanticcms-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
@@ -41,6 +37,9 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>war</packaging>
 
 	<properties>
+		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="https://semanticcms.com/">SemanticCMS</a>
+/ <a target="_top" href="https://semanticcms.com/core/">Core</a>
+/ <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
 		<shortTitle>Docs</shortTitle>
 	</properties>
 
@@ -222,13 +221,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<artifactId>semanticcms-core-canonical-book</artifactId>
 			<version>1.0.1-SNAPSHOT</version>
 		</dependency>
-		<!-- TODO: This is a dependency on self, careful bootstrap issues here, but one trick
-		           is to comment-out this dependency, deploy snapshot, then uncomment -->
-		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-docs-book</artifactId>
-			<version>1.4.1-SNAPSHOT</version>
-		</dependency>
+		<!-- Can't run /core/docs here due to cyclic dependency -->
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-model-book</artifactId>
