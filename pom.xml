@@ -27,13 +27,13 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<parent>
 		<groupId>com.semanticcms</groupId>
 		<artifactId>semanticcms-parent</artifactId>
-		<version>1.0.2-SNAPSHOT</version>
+		<version>2.0.0-SNAPSHOT</version>
 		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
 	<artifactId>semanticcms-core-docs</artifactId>
-	<version>1.5.0-SNAPSHOT</version>
+	<version>2.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<properties>
@@ -74,6 +74,27 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 									<type>jar</type>
 									<classifier>javadoc</classifier>
 									<targetPath>core/model/apidocs</targetPath>
+								</overlay>
+								<overlay>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-repository</artifactId>
+									<type>jar</type>
+									<classifier>javadoc</classifier>
+									<targetPath>core/repository/apidocs</targetPath>
+								</overlay>
+								<overlay>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-repository-local</artifactId>
+									<type>jar</type>
+									<classifier>javadoc</classifier>
+									<targetPath>core/repository/local/apidocs</targetPath>
+								</overlay>
+								<overlay>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-repository-missing</artifactId>
+									<type>jar</type>
+									<classifier>javadoc</classifier>
+									<targetPath>core/repository/missing/apidocs</targetPath>
 								</overlay>
 								<overlay>
 									<groupId>com.semanticcms</groupId>
@@ -126,14 +147,35 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-model</artifactId>
-					<version>1.8.3-SNAPSHOT</version>
+					<version>2.0.0-SNAPSHOT</version>
+					<classifier>javadoc</classifier>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
+					<groupId>com.semanticcms</groupId>
+					<artifactId>semanticcms-core-repository</artifactId>
+					<version>2.0.0-SNAPSHOT</version>
+					<classifier>javadoc</classifier>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
+					<groupId>com.semanticcms</groupId>
+					<artifactId>semanticcms-core-repository-local</artifactId>
+					<version>2.0.0-SNAPSHOT</version>
+					<classifier>javadoc</classifier>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
+					<groupId>com.semanticcms</groupId>
+					<artifactId>semanticcms-core-repository-missing</artifactId>
+					<version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-servlet</artifactId>
-					<version>1.12.0-SNAPSHOT</version>
+					<version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -154,7 +196,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-taglib</artifactId>
-					<version>1.9.1-SNAPSHOT</version>
+					<version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -181,17 +223,17 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<dependency>
 				<groupId>com.semanticcms</groupId>
 				<artifactId>semanticcms-core-servlet</artifactId>
-				<version>1.12.0-SNAPSHOT</version>
+				<version>2.0.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId>
 				<artifactId>semanticcms-core-taglib</artifactId>
-				<version>1.9.1-SNAPSHOT</version>
+				<version>2.0.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId>
 				<artifactId>semanticcms-tag-reference</artifactId>
-				<version>1.0.2-SNAPSHOT</version>
+				<version>2.0.0-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -212,7 +254,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-all</artifactId>
-			<version>1.4.0-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
@@ -224,12 +266,12 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-book</artifactId>
-			<version>1.5.3-validation-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-all-book</artifactId>
-			<version>1.4.0-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -245,12 +287,27 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-model-book</artifactId>
-			<version>1.8.3-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.semanticcms</groupId>
+			<artifactId>semanticcms-core-repository-book</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.semanticcms</groupId>
+			<artifactId>semanticcms-core-repository-local-book</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.semanticcms</groupId>
+			<artifactId>semanticcms-core-repository-missing-book</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-servlet-book</artifactId>
-			<version>1.12.0-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -265,7 +322,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-taglib-book</artifactId>
-			<version>1.9.1-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
