@@ -77,24 +77,31 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 								</overlay>
 								<overlay>
 									<groupId>com.semanticcms</groupId>
-									<artifactId>semanticcms-core-repository</artifactId>
+									<artifactId>semanticcms-core-pages</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>core/repository/apidocs</targetPath>
+									<targetPath>core/pages/apidocs</targetPath>
 								</overlay>
 								<overlay>
 									<groupId>com.semanticcms</groupId>
-									<artifactId>semanticcms-core-repository-local</artifactId>
+									<artifactId>semanticcms-core-pages-servlet</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>core/repository/local/apidocs</targetPath>
+									<targetPath>core/pages/servlet/apidocs</targetPath>
 								</overlay>
 								<overlay>
 									<groupId>com.semanticcms</groupId>
-									<artifactId>semanticcms-core-repository-missing</artifactId>
+									<artifactId>semanticcms-core-resources</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>core/repository/missing/apidocs</targetPath>
+									<targetPath>core/resources/apidocs</targetPath>
+								</overlay>
+								<overlay>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-resources-servlet</artifactId>
+									<type>jar</type>
+									<classifier>javadoc</classifier>
+									<targetPath>core/resources/servlet/apidocs</targetPath>
 								</overlay>
 								<overlay>
 									<groupId>com.semanticcms</groupId>
@@ -153,21 +160,28 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-repository</artifactId>
+					<artifactId>semanticcms-core-pages</artifactId>
 					<version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-repository-local</artifactId>
+					<artifactId>semanticcms-core-pages-servlet</artifactId>
 					<version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-repository-missing</artifactId>
+					<artifactId>semanticcms-core-resources</artifactId>
+					<version>2.0.0-SNAPSHOT</version>
+					<classifier>javadoc</classifier>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
+					<groupId>com.semanticcms</groupId>
+					<artifactId>semanticcms-core-resources-servlet</artifactId>
 					<version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
@@ -291,17 +305,22 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-repository-book</artifactId>
+			<artifactId>semanticcms-core-pages-book</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-repository-local-book</artifactId>
+			<artifactId>semanticcms-core-pages-servlet-book</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-repository-missing-book</artifactId>
+			<artifactId>semanticcms-core-resources-book</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.semanticcms</groupId>
+			<artifactId>semanticcms-core-resources-servlet-book</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>

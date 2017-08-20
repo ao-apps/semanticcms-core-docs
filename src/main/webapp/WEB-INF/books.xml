@@ -43,14 +43,17 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/book/src/main/resources-filtered/META-INF/resources/core/model">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/repository" cvsworkDirectory="~/maven2/ao/semanticcms/core/repository/book/src/main/resources-filtered/META-INF/resources/core/repository">
+	<book name="/core/pages" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages/book/src/main/resources-filtered/META-INF/resources/core/pages">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/repository/local" cvsworkDirectory="~/maven2/ao/semanticcms/core/repository-local/book/src/main/resources-filtered/META-INF/resources/core/repository/local">
-		<parent book="/core/repository" page="/index.jspx" />
+	<book name="/core/pages/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-servlet/book/src/main/resources-filtered/META-INF/resources/core/pages/servlet">
+		<parent book="/core/pages" page="/index.jspx" />
 	</book>
-	<book name="/core/repository/missing" cvsworkDirectory="~/maven2/ao/semanticcms/core/repository-missing/book/src/main/resources-filtered/META-INF/resources/core/repository/missing">
-		<parent book="/core/repository" page="/index.jspx" />
+	<book name="/core/resources" cvsworkDirectory="~/maven2/ao/semanticcms/core/resources/book/src/main/resources-filtered/META-INF/resources/core/resources">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/resources/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/resources-servlet/book/src/main/resources-filtered/META-INF/resources/core/resources/servlet">
+		<parent book="/core/resources" page="/index.jspx" />
 	</book>
 	<book name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/servlet/book/src/main/resources-filtered/META-INF/resources/core/servlet">
 		<parent book="/core" page="/index.jspx" />
