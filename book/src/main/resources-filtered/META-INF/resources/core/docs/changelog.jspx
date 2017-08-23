@@ -54,10 +54,10 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
-					<li>New module <core:link book="/core/pages" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/pages/servlet" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/resources" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/resources/servlet" page="/index.jspx" />.</li>
+					<li>New module <core:link book="/core/pages" page="/" />.</li>
+					<li>New module <core:link book="/core/pages/servlet" page="/" />.</li>
+					<li>New module <core:link book="/core/resources" page="/" />.</li>
+					<li>New module <core:link book="/core/resources/servlet" page="/" />.</li>
 				</ul>
 			</changelog:changelog>
 		</c:if>
@@ -86,7 +86,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		>
 			<ul>
 				<li>New <ao:a href="https://aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a> POM to simplify <code>pom.xml</code> files.</li>
-				<li>Project documentation moved to per-project book in <core:link book="/" page="/index.jspx" /> format.</li>
+				<li>Project documentation moved to per-project book in <core:link book="/" page="/" /> format.</li>
 				<li>Added changelog as top-level project link.</li>
 			</ul>
 		</changelog:release>
