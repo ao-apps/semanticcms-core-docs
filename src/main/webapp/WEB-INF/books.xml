@@ -24,7 +24,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 <books
 	xmlns="https://semanticcms.com/core/servlet/books-1.1.xsd"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="https://semanticcms.com/core/servlet/ https://semanticcms.com/core/servlet/books-1.1.xsd"
+	xsi:schemaLocation="https://semanticcms.com/core/servlet/books-1.1.xsd https://semanticcms.com/core/servlet/books-1.1.xsd"
 	rootDomain="semanticcms.com"
 	rootBook="/core"
 >
