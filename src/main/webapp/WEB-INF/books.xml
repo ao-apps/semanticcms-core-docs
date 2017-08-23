@@ -53,6 +53,9 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<book domain="semanticcms.com" name="/core/pages/jspx" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-jspx/book/src/main/resources-filtered/META-INF/resources/core/pages/jspx">
 		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" />
 	</book>
+	<book domain="semanticcms.com" name="/core/pages/local" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-local/book/src/main/resources-filtered/META-INF/resources/core/pages/local">
+		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" />
+	</book>
 	<book domain="semanticcms.com" name="/core/pages/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-servlet/book/src/main/resources-filtered/META-INF/resources/core/pages/servlet">
 		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" />
 	</book>
