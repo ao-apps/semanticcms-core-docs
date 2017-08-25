@@ -62,6 +62,15 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<book domain="semanticcms.com" name="/core/pages/union" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-union/book/src/main/resources-filtered/META-INF/resources/core/pages/union">
 		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" />
 	</book>
+	<book domain="semanticcms.com" name="/core/renderer" cvsworkDirectory="~/maven2/ao/semanticcms/core/renderer/book/src/main/resources-filtered/META-INF/resources/core/renderer">
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+	</book>
+	<book domain="semanticcms.com" name="/core/renderer/html" cvsworkDirectory="~/maven2/ao/semanticcms/core/renderer-html/book/src/main/resources-filtered/META-INF/resources/core/renderer/html">
+		<parent domain="semanticcms.com" book="/core/renderer" page="/index.jspx" />
+	</book>
+	<book domain="semanticcms.com" name="/core/renderer/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/renderer-servlet/book/src/main/resources-filtered/META-INF/resources/core/renderer/servlet">
+		<parent domain="semanticcms.com" book="/core/renderer" page="/index.jspx" />
+	</book>
 	<book domain="semanticcms.com" name="/core/resources" cvsworkDirectory="~/maven2/ao/semanticcms/core/resources/book/src/main/resources-filtered/META-INF/resources/core/resources">
 		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
 	</book>

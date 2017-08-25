@@ -37,7 +37,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T17:03:04-0500"
-		dateModified="2017-08-23T15:28:34-0500"
+		dateModified="2017-08-25T16:26:25-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-docs:pom.version}" />
@@ -60,6 +60,9 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 					<li>New module <core:link book="/core/pages/local" page="/" />.</li>
 					<li>New module <core:link book="/core/pages/servlet" page="/" />.</li>
 					<li>New module <core:link book="/core/pages/union" page="/" />.</li>
+					<li>New module <core:link book="/core/renderer" page="/" />.</li>
+					<li>New module <core:link book="/core/renderer/html" page="/" />.</li>
+					<li>New module <core:link book="/core/renderer/servlet" page="/" />.</li>
 					<li>New module <core:link book="/core/resources" page="/" />.</li>
 					<li>New module <core:link book="/core/resources/servlet" page="/" />.</li>
 				</ul>
