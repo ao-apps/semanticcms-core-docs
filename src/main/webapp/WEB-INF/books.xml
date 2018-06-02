@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
 semanticcms-core-docs - Documentation runner for Java API for modeling web page content and relationships.
-Copyright (C) 2016, 2017  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2018  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -39,6 +39,9 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
 	</book>
 	<book domain="semanticcms.com" name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms/core/canonical/book/src/main/resources-filtered/META-INF/resources/core/canonical">
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+	</book>
+	<book domain="semanticcms.com" name="/core/controller" cvsworkDirectory="~/maven2/ao/semanticcms/core/controller/book/src/main/resources-filtered/META-INF/resources/core/controller">
 		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
 	</book>
 	<book domain="semanticcms.com" name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/book/src/main/resources-filtered/META-INF/resources/core/model">
