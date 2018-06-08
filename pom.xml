@@ -64,7 +64,6 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-war-plugin</artifactId>
-						<version>3.2.1</version>
 						<configuration>
 							<!-- TODO: Move overlays to per-book projects -->
 							<overlays>
