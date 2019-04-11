@@ -1,4 +1,26 @@
 <?xml version="1.0"?>
+<!--
+semanticcms-core-docs - Documentation runner for Java API for modeling web page content and relationships.
+Copyright (C) 2016, 2017, 2018, 2019  AO Industries, Inc.
+    support@aoindustries.com
+    7262 Bull Pen Cir
+    Mobile, AL 36695
+
+This file is part of semanticcms-core-docs.
+
+semanticcms-core-docs is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+semanticcms-core-docs is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
+-->
 <books
 	xmlns="https://semanticcms.com/core/servlet/"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -8,35 +30,35 @@
 	<missingBook name="/" />
 	<!-- Can't run /core/docs here due to cyclic dependency -->
 	<missingBook name="/core/docs" />
-	<book name="/core" cvsworkDirectory="~/maven2/ao/semanticcms/core/book/src/main/resources-filtered/META-INF/resources/core" />
-	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms/core/all/book/src/main/resources-filtered/META-INF/resources/core/all">
+	<book name="/core" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/book/src/main/resources-filtered/META-INF/resources/core" />
+	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/all/book/src/main/resources-filtered/META-INF/resources/core/all">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms/core/breadcrumblist-json-ld/book/src/main/resources-filtered/META-INF/resources/core/breadcrumblist-json-ld">
+	<book name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/breadcrumblist-json-ld/book/src/main/resources-filtered/META-INF/resources/core/breadcrumblist-json-ld">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms/core/canonical/book/src/main/resources-filtered/META-INF/resources/core/canonical">
+	<book name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/canonical/book/src/main/resources-filtered/META-INF/resources/core/canonical">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/book/src/main/resources-filtered/META-INF/resources/core/model">
+	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/model/book/src/main/resources-filtered/META-INF/resources/core/model">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/servlet/book/src/main/resources-filtered/META-INF/resources/core/servlet">
+	<book name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/servlet/book/src/main/resources-filtered/META-INF/resources/core/servlet">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/sitemap" cvsworkDirectory="~/maven2/ao/semanticcms/core/sitemap/book/src/main/resources-filtered/META-INF/resources/core/sitemap">
+	<book name="/core/sitemap" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/sitemap/book/src/main/resources-filtered/META-INF/resources/core/sitemap">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/style" cvsworkDirectory="~/maven2/ao/semanticcms/core/style/book/src/main/resources-filtered/META-INF/resources/core/style">
+	<book name="/core/style" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/style/book/src/main/resources-filtered/META-INF/resources/core/style">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/core/taglib/book/src/main/resources-filtered/META-INF/resources/core/taglib">
+	<book name="/core/taglib" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/taglib/book/src/main/resources-filtered/META-INF/resources/core/taglib">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/theme-base" cvsworkDirectory="~/maven2/ao/semanticcms/core/theme-base/book/src/main/resources-filtered/META-INF/resources/core/theme-base">
+	<book name="/core/theme-base" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/theme-base/book/src/main/resources-filtered/META-INF/resources/core/theme-base">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/view-content" cvsworkDirectory="~/maven2/ao/semanticcms/core/view-content/book/src/main/resources-filtered/META-INF/resources/core/view-content">
+	<book name="/core/view-content" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/view-content/book/src/main/resources-filtered/META-INF/resources/core/view-content">
 		<parent book="/core" page="/index.jspx" />
 	</book>
 </books>
