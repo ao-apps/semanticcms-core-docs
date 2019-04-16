@@ -35,7 +35,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<!-- These values are copied from the project being documented -->
 		<documented.groupId>com.semanticcms</documented.groupId><documented.artifactId>semanticcms-core-docs</documented.artifactId>
-		<documented.name>SemanticCMS 1 Core Docs</documented.name>
+		<documented.name>SemanticCMS Core Docs</documented.name>
 		<documented.shortTitle>Docs</documented.shortTitle>
 		<documented.url>https://semanticcms.com/core/docs/</documented.url>
 		<documented.description>Documentation runner for Java API for modeling web page content and relationships.</documented.description>
