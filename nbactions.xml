@@ -15,6 +15,7 @@
             </properties>
             <activatedProfiles>
                 <activatedProfile>skip-war</activatedProfile>
+                <activatedProfile>development</activatedProfile>
             </activatedProfiles>
         </action>
         <action>
@@ -33,6 +34,7 @@
             </properties>
             <activatedProfiles>
                 <activatedProfile>skip-war</activatedProfile>
+                <activatedProfile>development</activatedProfile>
             </activatedProfiles>
         </action>
         <action>
