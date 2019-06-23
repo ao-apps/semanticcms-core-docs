@@ -16,6 +16,7 @@
             <activatedProfiles>
                 <activatedProfile>skip-war</activatedProfile>
                 <activatedProfile>development</activatedProfile>
+                <activatedProfile>POST-SNAPSHOT</activatedProfile>
             </activatedProfiles>
         </action>
         <action>
@@ -35,6 +36,7 @@
             <activatedProfiles>
                 <activatedProfile>skip-war</activatedProfile>
                 <activatedProfile>development</activatedProfile>
+                <activatedProfile>POST-SNAPSHOT</activatedProfile>
             </activatedProfiles>
         </action>
         <action>
@@ -53,6 +55,8 @@
             </properties>
             <activatedProfiles>
                 <activatedProfile>skip-war</activatedProfile>
+                <activatedProfile>development</activatedProfile>
+                <activatedProfile>POST-SNAPSHOT</activatedProfile>
             </activatedProfiles>
         </action>
         
