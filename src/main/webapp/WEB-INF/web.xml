@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms-core-docs - Documentation runner for Java API for modeling web page content and relationships.
-Copyright (C) 2016, 2017  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -27,7 +27,8 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
                       http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
   version="3.0"
   metadata-complete="false">
-	<display-name>SemanticCMS Core Docs</display-name>
+    <display-name>@{project.name} @{project.version}</display-name>
+	<description>@{project.description}</description>
 	<context-param>
 		<description>
 			When set to "true" and the request is from localhost, enables desktop
