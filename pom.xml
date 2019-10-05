@@ -149,7 +149,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<dependencies>
 				<!-- Dependencies for javadocs -->
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.10.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.10.0-POST-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -350,7 +350,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<!-- Can't run /core/docs here due to cyclic dependency -->
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model-book</artifactId><version>1.10.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model-book</artifactId><version>1.10.0-POST-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet-book</artifactId><version>1.14.0-SNAPSHOT</version>
