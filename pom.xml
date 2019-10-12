@@ -346,7 +346,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld-book</artifactId><version>1.2.0-POST-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical-book</artifactId><version>1.1.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical-book</artifactId><version>1.1.0-POST-SNAPSHOT</version>
 		</dependency>
 		<!-- Can't run /core/docs here due to cyclic dependency -->
 		<dependency>
