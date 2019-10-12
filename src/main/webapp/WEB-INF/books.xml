@@ -32,6 +32,9 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<missingBook name="/core/docs" />
 	<missingBook name="/parent" />
 	<book name="/core" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/book/src/main/resources-filtered/META-INF/resources/core" />
+	<book name="/core/bom" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/bom/book/src/main/resources-filtered/META-INF/resources/core/bom">
+		<parent book="/core" page="/index.jspx" />
+	</book>
 	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms-1.x/core/all/book/src/main/resources-filtered/META-INF/resources/core/all">
 		<parent book="/core" page="/index.jspx" />
 	</book>
