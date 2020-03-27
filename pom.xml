@@ -365,7 +365,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<!-- Can't run /core/docs here due to cyclic dependency -->
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model-book</artifactId><version>1.11.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model-book</artifactId><version>1.11.0${POST-SNAPSHOT}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet-book</artifactId><version>1.15.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
