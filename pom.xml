@@ -93,15 +93,19 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all</artifactId>
 					<type>pom</type>
+					<scope>runtime</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId>
+					<scope>runtime</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree</artifactId>
+					<scope>runtime</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-what-links-here</artifactId>
+					<scope>runtime</scope>
 				</dependency>
 			</dependencies>
 		</profile>
@@ -218,11 +222,14 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<!-- Direct -->
+			<!-- Runtime Direct -->
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-mime-mappings</artifactId><version>1.0.0${POST-SNAPSHOT}</version>
 			</dependency>
-			<!-- Transitive -->
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>1.9.0${POST-SNAPSHOT}</version>
+			</dependency>
+			<!-- Runtime Transitive -->
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>1.3.0${POST-SNAPSHOT}</version>
 			</dependency>
@@ -329,70 +336,89 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId><artifactId>jstl</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.web</groupId><artifactId>jstl-impl</artifactId>
-		</dependency>
-		<!-- Direct -->
+		<!-- Runtime Direct -->
 		<dependency>
 			<!-- Required for UTF-8 static resources -->
 			<groupId>com.aoindustries</groupId><artifactId>ao-mime-mappings</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId><artifactId>jstl</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.web</groupId><artifactId>jstl-impl</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<!-- Non-classpath Dependencies -->
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId>
 			<type>pom</type>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId>
 			<type>pom</type>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId>
 			<type>pom</type>
+			<scope>runtime</scope>
 		</dependency>
 		<!-- Books -->
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom-book</artifactId><version>1.6.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all-book</artifactId><version>1.6.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-book</artifactId><version>1.9.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld-book</artifactId><version>1.3.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical-book</artifactId><version>1.2.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<!-- Can't run /core/docs here due to cyclic dependency -->
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model-book</artifactId><version>1.11.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet-book</artifactId><version>1.15.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap-book</artifactId><version>1.13.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style-book</artifactId><version>1.4.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib-book</artifactId><version>1.12.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base-book</artifactId><version>1.4.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content-book</artifactId><version>1.8.0${POST-SNAPSHOT}</version>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 </project>
