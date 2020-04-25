@@ -115,7 +115,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				<pluginManagement>
 					<plugins>
 						<plugin>
-							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId>
+							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId><version>3.2.3</version>
 							<configuration>
 								<overlays>
 									<overlay>
