@@ -10,6 +10,9 @@
 		<img src="https://semanticcms.com/ao-badges/packaging-active.svg" alt="packaging: active" />
 	</a>
 	<br />
+	<a href="https://docs.oracle.com/javase/8/docs/api/">
+		<img src="https://semanticcms.com/ao-badges/java-8.svg" alt="java: &gt;= 8" />
+	</a>
 	<a href="https://docs.oracle.com/javaee/6/api/">
 		<img src="https://semanticcms.com/ao-badges/javaee-6.svg" alt="java ee: &gt;= 6" />
 	</a>
