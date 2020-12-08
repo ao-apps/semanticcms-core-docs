@@ -265,7 +265,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependencies>
 			<!-- Direct -->
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all-book</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all-book</artifactId><version>1.8.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom-book</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -499,7 +499,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			</dependency>
 			<!-- Non-classpath Direct -->
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.8.0${POST-SNAPSHOT}</version>
 				<type>pom</type>
 			</dependency>
 			<dependency>
