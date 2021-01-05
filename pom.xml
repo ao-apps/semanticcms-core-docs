@@ -166,117 +166,98 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 						<configuration>
 							<overlays>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/controller/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/model/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/pages/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/pages/jsp/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/pages/jspx/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/pages/local/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/pages/servlet/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/pages/union/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/renderer/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/renderer/html/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/renderer/servlet/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/resources/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/resources/servlet/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/servlet/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/sitemap/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/style/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/taglib/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/theme-base/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/view-content/apidocs</targetPath>
 								</overlay>
 							</overlays>
@@ -288,116 +269,97 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<dependencies>
 				<!-- Dependencies for javadocs -->
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
