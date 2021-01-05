@@ -166,45 +166,38 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 						<configuration>
 							<overlays>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/model/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/servlet/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/sitemap/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/style/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/taglib/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/theme-base/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId>
+									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
-									<classifier>javadoc</classifier>
 									<targetPath>core/view-content/apidocs</targetPath>
 								</overlay>
 							</overlays>
@@ -216,44 +209,37 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<dependencies>
 				<!-- Dependencies for javadocs -->
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.13.0${POST-SNAPSHOT}</version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.13.0${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><version>1.17.0${POST-SNAPSHOT}</version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><version>1.17.0${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>1.13.0${POST-SNAPSHOT}</version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>1.13.0${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><version>1.4.0${POST-SNAPSHOT}</version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><version>1.4.0${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><version>1.14.1${POST-SNAPSHOT}</version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><version>1.14.1${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><version>1.5.0${POST-SNAPSHOT}</version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><version>1.5.0${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><version>1.8.0${POST-SNAPSHOT}</version>
-					<classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><version>1.8.0${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
