@@ -29,7 +29,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><version>1.8.1</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><version>1.8.1-POST-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<properties>
@@ -71,7 +71,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-core-docs.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-core-docs.git</developerConnection>
 		<url>https://github.com/aoindustries/semanticcms-core-docs</url>
-		<tag>semanticcms-core-docs-1.8.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
