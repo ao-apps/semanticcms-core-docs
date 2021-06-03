@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms-core-docs - Documentation runner for Java API for modeling web page content and relationships.
-Copyright (C) 2016, 2017, 2018, 2019, 2020  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2018, 2019, 2020, 2021  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -33,70 +33,73 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<missingBook domain="semanticcms.com" name="/core/docs" base="https://semanticcms.com/core/docs/" />
 	<missingBook domain="semanticcms.com" name="/parent" base="https://semanticcms.com/parent/" />
 	<book domain="semanticcms.com" name="/core" cvsworkDirectory="~/maven2/ao/semanticcms/core/book/src/main/resources-filtered/META-INF/resources/core" />
+	<book domain="semanticcms.com" name="/core/bom" cvsworkDirectory="~/maven2/ao/semanticcms/core/bom/book/src/main/resources-filtered/META-INF/resources/core/bom">
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="BOM" />
+	</book>
 	<book domain="semanticcms.com" name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms/core/all/book/src/main/resources-filtered/META-INF/resources/core/all">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="All" />
 	</book>
 	<book domain="semanticcms.com" name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms/core/breadcrumblist-json-ld/book/src/main/resources-filtered/META-INF/resources/core/breadcrumblist-json-ld">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="BreadcrumbList JSON-LD" />
 	</book>
 	<book domain="semanticcms.com" name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms/core/canonical/book/src/main/resources-filtered/META-INF/resources/core/canonical">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Canonical" />
 	</book>
 	<book domain="semanticcms.com" name="/core/controller" cvsworkDirectory="~/maven2/ao/semanticcms/core/controller/book/src/main/resources-filtered/META-INF/resources/core/controller">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Controller" />
 	</book>
 	<book domain="semanticcms.com" name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/book/src/main/resources-filtered/META-INF/resources/core/model">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Model" />
 	</book>
 	<book domain="semanticcms.com" name="/core/pages" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages/book/src/main/resources-filtered/META-INF/resources/core/pages">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Pages" />
 	</book>
 	<book domain="semanticcms.com" name="/core/pages/jsp" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-jsp/book/src/main/resources-filtered/META-INF/resources/core/pages/jsp">
-		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" shortTitle="JSP" />
 	</book>
 	<book domain="semanticcms.com" name="/core/pages/jspx" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-jspx/book/src/main/resources-filtered/META-INF/resources/core/pages/jspx">
-		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" shortTitle="JSPX" />
 	</book>
 	<book domain="semanticcms.com" name="/core/pages/local" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-local/book/src/main/resources-filtered/META-INF/resources/core/pages/local">
-		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" shortTitle="Local" />
 	</book>
 	<book domain="semanticcms.com" name="/core/pages/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-servlet/book/src/main/resources-filtered/META-INF/resources/core/pages/servlet">
-		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" shortTitle="Servlet" />
 	</book>
 	<book domain="semanticcms.com" name="/core/pages/union" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-union/book/src/main/resources-filtered/META-INF/resources/core/pages/union">
-		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core/pages" page="/index.jspx" shortTitle="Union" />
 	</book>
 	<book domain="semanticcms.com" name="/core/renderer" cvsworkDirectory="~/maven2/ao/semanticcms/core/renderer/book/src/main/resources-filtered/META-INF/resources/core/renderer">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Renderer" />
 	</book>
 	<book domain="semanticcms.com" name="/core/renderer/html" cvsworkDirectory="~/maven2/ao/semanticcms/core/renderer-html/book/src/main/resources-filtered/META-INF/resources/core/renderer/html">
-		<parent domain="semanticcms.com" book="/core/renderer" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core/renderer" page="/index.jspx" shortTitle="HTML" />
 	</book>
 	<book domain="semanticcms.com" name="/core/renderer/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/renderer-servlet/book/src/main/resources-filtered/META-INF/resources/core/renderer/servlet">
-		<parent domain="semanticcms.com" book="/core/renderer" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core/renderer" page="/index.jspx" shortTitle="Servlet" />
 	</book>
 	<book domain="semanticcms.com" name="/core/resources" cvsworkDirectory="~/maven2/ao/semanticcms/core/resources/book/src/main/resources-filtered/META-INF/resources/core/resources">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Resources" />
 	</book>
 	<book domain="semanticcms.com" name="/core/resources/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/resources-servlet/book/src/main/resources-filtered/META-INF/resources/core/resources/servlet">
-		<parent domain="semanticcms.com" book="/core/resources" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core/resources" page="/index.jspx" shortTitle="Servlet" />
 	</book>
 	<book domain="semanticcms.com" name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/servlet/book/src/main/resources-filtered/META-INF/resources/core/servlet">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Servlet" />
 	</book>
 	<book domain="semanticcms.com" name="/core/sitemap" cvsworkDirectory="~/maven2/ao/semanticcms/core/sitemap/book/src/main/resources-filtered/META-INF/resources/core/sitemap">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Sitemap" />
 	</book>
 	<book domain="semanticcms.com" name="/core/style" cvsworkDirectory="~/maven2/ao/semanticcms/core/style/book/src/main/resources-filtered/META-INF/resources/core/style">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Style" />
 	</book>
 	<book domain="semanticcms.com" name="/core/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/core/taglib/book/src/main/resources-filtered/META-INF/resources/core/taglib">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Taglib" />
 	</book>
 	<book domain="semanticcms.com" name="/core/theme-base" cvsworkDirectory="~/maven2/ao/semanticcms/core/theme-base/book/src/main/resources-filtered/META-INF/resources/core/theme-base">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="Theme Base" />
 	</book>
 	<book domain="semanticcms.com" name="/core/view-content" cvsworkDirectory="~/maven2/ao/semanticcms/core/view-content/book/src/main/resources-filtered/META-INF/resources/core/view-content">
-		<parent domain="semanticcms.com" book="/core" page="/index.jspx" />
+		<parent domain="semanticcms.com" book="/core" page="/index.jspx" shortTitle="View Content" />
 	</book>
 </books>
