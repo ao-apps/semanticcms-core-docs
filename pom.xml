@@ -32,6 +32,10 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 	<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><version>1.9.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
+	<properties>
+		<module.name>com.semanticcms.core.docs</module.name>
+	</properties>
+
 	<name>SemanticCMS Core Docs</name>
 	<url>https://semanticcms.com/core/docs/</url>
 	<description>Documentation runner for Java API for modeling web page content and relationships.</description>
@@ -79,20 +83,23 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				<configuration>
 					<ignoreNonCompile>true</ignoreNonCompile>
 					<usedDependencies>
-						<!-- Non-classpath Direct -->
-						<dependency>com.semanticcms:semanticcms-core-all</dependency>
-						<dependency>com.semanticcms:semanticcms-news-all</dependency>
-						<dependency>com.semanticcms:semanticcms-section-all</dependency>
+						<!-- Direct -->
+						<dependency>com.semanticcms:semanticcms-news-all</dependency><!-- Required for module-info.java -->
+						<dependency>com.semanticcms:semanticcms-section-all</dependency><!-- Required for module-info.java -->
 					</usedDependencies>
 					<ignoredUnusedDeclaredDependencies>
 						<!-- Books -->
 						<dependency>com.semanticcms:*-book:jar</dependency>
 					</ignoredUnusedDeclaredDependencies>
+					<ignoredDependencies>
+						<!-- No "module-info.java" in some release builds -->
+						<dependency>com.aoapps:ao-fluent-html-any</dependency>
+					</ignoredDependencies>
 				</configuration>
 			</plugin>
 			<plugin>
 				<!--
-					Workaround "versions:display-plugin-updates" failing when "release" profile active.
+					Workaround "versions:display-plugin-updates" failing when "publish" profile active.
 					See https://github.com/mojohaus/versions-maven-plugin/issues/354
 
 					A recent optimization moved all configuration of the maven-war-plugin to
@@ -134,7 +141,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			<dependencies>
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all</artifactId><version>1.6.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-					<type>pom</type>
+					<scope>runtime</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -151,7 +158,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			</dependencies>
 		</profile>
 		<profile>
-			<id>release</id>
+			<id>publish</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -198,7 +205,6 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 					</plugin>
 				</plugins>
 			</build>
-
 			<dependencies>
 				<!-- Dependencies for javadocs -->
 				<dependency>
@@ -244,6 +250,9 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependencies>
 			<!-- Direct -->
 			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.9.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			</dependency>
+			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all-book</artifactId><version>1.9.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
@@ -278,6 +287,12 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content-book</artifactId><version>1.9.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><version>1.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			</dependency>
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><version>1.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<!-- Transitive -->
 			<dependency>
@@ -479,19 +494,6 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-style</artifactId><version>1.9.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId> -->
-			<!-- Non-classpath Direct -->
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.9.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-				<type>pom</type>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><version>1.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-				<type>pom</type>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><version>1.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-				<type>pom</type>
-			</dependency>
 			<!-- BOM -->
 			<dependency>
 				<groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -503,6 +505,9 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 
 	<dependencies>
 		<!-- Direct -->
+		<dependency>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all-book</artifactId>
 		</dependency>
@@ -540,6 +545,12 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content-book</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId>
+		</dependency>
 		<!-- Runtime Direct -->
 		<dependency>
 			<!-- Required for UTF-8 static resources -->
@@ -553,19 +564,6 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId>
 			<scope>runtime</scope>
-		</dependency>
-		<!-- Non-classpath Direct -->
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId>
-			<type>pom</type>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId>
-			<type>pom</type>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId>
-			<type>pom</type>
 		</dependency>
 	</dependencies>
 </project>
