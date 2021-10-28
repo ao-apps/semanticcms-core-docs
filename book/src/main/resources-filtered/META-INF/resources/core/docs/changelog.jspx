@@ -37,7 +37,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T17:03:04-05:00"
-		dateModified="2021-10-19T00:26:27-05:00"
+		dateModified="2021-10-28T02:26:31-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -60,6 +60,7 @@ along with semanticcms-core-docs.  If not, see <http://www.gnu.org/licenses />.
 					<li>New module <core:link book="/core/renderer/servlet" page="/" />.</li>
 					<li>New module <core:link book="/core/resources" page="/" />.</li>
 					<li>New module <core:link book="/core/resources/servlet" page="/" />.</li>
+					<li>Require secure session cookies in production.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
