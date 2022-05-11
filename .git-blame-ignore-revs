@@ -13,3 +13,6 @@
 
 # Configured javadoc links matching dependencies.
 8a37931a2198f6d6b29739caf5ced14f8e8dd8ff
+
+# Performed manual checkstyle clean-up
+f4a82bd860f423c6c1eb249a586002d36d99b8bd
