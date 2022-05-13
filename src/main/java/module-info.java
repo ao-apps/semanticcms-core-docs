@@ -48,4 +48,4 @@ module com.semanticcms.core.docs {
   requires com.semanticcms.core.view.content.book; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content-book</artifactId>
   requires com.semanticcms.news.all; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId>
   requires com.semanticcms.section.all; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId>
-} // TODO: Avoiding rewrite-maven-plugin-4.22.2 truncation
+}
