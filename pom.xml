@@ -488,7 +488,7 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.aoapps</groupId><artifactId>ao-servlet-filter</artifactId><version>3.0.3${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>1.12.3-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>1.12.3${POST-SNAPSHOT}</version>
       </dependency>
       <!-- Runtime Transitive -->
       <dependency>
