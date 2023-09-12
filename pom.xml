@@ -197,95 +197,96 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
             <executions>
               <!-- Unpack all javadoc JARs in preparation for packaging as javadoc-webresources -->
               <execution>
-                <id>unpack.javadocs</id><phase>generate-resources</phase><goals><goal>unpack</goal></goals>
+                <id>copy.javadocs</id><phase>generate-resources</phase><goals><goal>copy</goal></goals>
                 <configuration>
+                  <outputDirectory>${project.build.directory}/dependency/copy.javadocs</outputDirectory>
                   <artifactItems>
                     <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><classifier>javadoc</classifier> -->
                     <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom</artifactId><classifier>javadoc</classifier> -->
                     <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core</artifactId><classifier>javadoc</classifier> -->
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-breadcrumblist-json-ld/META-INF/resources/core/breadcrumblist-json-ld/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-breadcrumblist-json-ld-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-canonical/META-INF/resources/core/canonical/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-canonical-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-controller/META-INF/resources/core/controller/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-controller-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-model/META-INF/resources/core/model/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-model-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages/META-INF/resources/core/pages/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-pages-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-jsp/META-INF/resources/core/pages/jsp/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-pages-jsp-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-jspx/META-INF/resources/core/pages/jspx/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-pages-jspx-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-local/META-INF/resources/core/pages/local/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-pages-local-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-servlet/META-INF/resources/core/pages/servlet/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-pages-servlet-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-union/META-INF/resources/core/pages/union/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-pages-union-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-renderer/META-INF/resources/core/renderer/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-renderer-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-renderer-html/META-INF/resources/core/renderer/html/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-renderer-html-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-renderer-servlet/META-INF/resources/core/renderer/servlet/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-renderer-servlet-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-resources/META-INF/resources/core/resources/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-resources-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-resources-servlet/META-INF/resources/core/resources/servlet/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-resources-servlet-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-servlet/META-INF/resources/core/servlet/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-servlet-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-sitemap/META-INF/resources/core/sitemap/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-sitemap-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-style/META-INF/resources/core/style/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-style-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-taglib/META-INF/resources/core/taglib/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-taglib-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-theme-base/META-INF/resources/core/theme-base/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-theme-base-javadoc.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
                       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><classifier>javadoc</classifier>
-                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-view-content/META-INF/resources/core/view-content/apidocs</outputDirectory>
+                      <destFileName>semanticcms-core-view-content-javadoc.jar</destFileName>
                     </artifactItem>
                   </artifactItems>
                 </configuration>
@@ -316,45 +317,47 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
                 <id>create-javadoc-webresources</id><phase>generate-resources</phase><goals><goal>run</goal></goals>
                 <configuration>
                   <target>
-                    <!-- See https://stackoverflow.com/a/14740667/7121505 -->
-                    <taskdef name="groovy" classname="org.codehaus.groovy.ant.Groovy"/>
-                    <macrodef name="filedate">
-                      <attribute name="file"/>
-                      <attribute name="property"/>
-                      <sequential>
-                        <groovy>
-                          import java.io.File
-                          import java.io.IOException
-                          File file = new File("@{file}")
-                          if (!file.exists()) {
-                            throw new IOException("File does not exist: " + file);
-                          }
-                          if (!file.isFile()) {
-                            throw new IOException("Not a regular file: " + file);
-                          }
-                          properties.'@{property}' = file.lastModified()
-                       </groovy>
-                      </sequential>
-                    </macrodef>
                     <macrodef name="create-javadoc-webresource">
                       <attribute name="groupId"/>
                       <attribute name="artifactId"/>
                       <attribute name="path"/>
                       <sequential>
-                        <filedate
-                          file="${project.build.directory}/dependency/unpack.javadocs/@{groupId}/@{artifactId}/META-INF/resources@{path}/apidocs/META-INF/MANIFEST.MF"
-                          property="@{groupId}:@{artifactId}.modified"
+                        <!--
+                          As a requirement for reproducible builds, much care is taken to use the original timestamp
+                          of META-INF for all newly introduced directory levels:
+                          1) <jar> task does not maintain the timestamp of the MANIFEST.MF file, so using <zip>
+                          2) Generating a small ZIP to provide the timestamps for the new directories, matching META-INF
+                          3) Extracting META-INF/MANIFEST.MF directly to maintain timestamp
+                          4) All entries copied zip-to-zip to not lose directory timestamps
+                        -->
+                        <!-- Create ZIP directories to patch into new ZIP -->
+                        <taskdef resource="com/aoapps/ant/tasks/antlib.xml" />
+                        <create-zipped-directories
+                          referenceZip="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
+                          referencePath="META-INF/"
+                          generateZip="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip"
+                          generatePath="META-INF/resources@{path}/apidocs/"
                         />
-                        <jar
+                        <zip
                           destfile="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar"
-                          manifest="${project.build.directory}/dependency/unpack.javadocs/@{groupId}/@{artifactId}/META-INF/resources@{path}/apidocs/META-INF/MANIFEST.MF"
-                          modificationtime="${@{groupId}:@{artifactId}.modified}"
+                          keepcompression="true"
+                          encoding="UTF8"
+                          whenempty="fail"
+                          duplicate="fail"
                         >
-                          <fileset
-                            dir="${project.build.directory}/dependency/unpack.javadocs/@{groupId}/@{artifactId}"
+                          <zipfileset
+                            src="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip"
+                          />
+                          <zipfileset
+                            src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
+                            includes="META-INF/MANIFEST.MF"
+                          />
+                          <zipfileset
+                            src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
+                            prefix="META-INF/resources@{path}/apidocs"
                             excludes="**/MANIFEST.MF"
                           />
-                        </jar>
+                        </zip>
                       </sequential>
                     </macrodef>
                     <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><classifier>javadoc</classifier> -->
@@ -385,11 +388,6 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
                 </configuration>
               </execution>
             </executions>
-            <dependencies>
-              <dependency>
-                <groupId>org.apache.groovy</groupId><artifactId>groovy-ant</artifactId><version>4.0.14</version>
-              </dependency>
-            </dependencies>
           </plugin>
         </plugins>
       </build>
