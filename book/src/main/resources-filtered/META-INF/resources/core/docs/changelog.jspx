@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms-core-docs - Documentation runner for Java API for modeling web page content and relationships.
-Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-10-30T17:03:04-05:00"
-    dateModified="2022-05-15T05:14:03-05:00"
+    dateModified="2023-09-16T18:59:49Z"
   >
     <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
       <changelog:release
@@ -60,6 +60,9 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
           <li>New module <core:link book="/core/renderer/servlet" page="/" />.</li>
           <li>New module <core:link book="/core/resources" page="/" />.</li>
           <li>New module <core:link book="/core/resources/servlet" page="/" />.</li>
+          <li>Updated version of <core:link book="/core/bom" page="/" />.</li>
+          <li>Updated version of <core:link book="/core/all" page="/" />.</li>
+          <li>Updated version of <core:link book="/core/sitemap" page="/" />.</li>
         </ul>
       </changelog:release>
     </c:if>
