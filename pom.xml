@@ -269,7 +269,7 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
               <execution>
                 <id>create-javadoc-webresources</id><phase>generate-resources</phase><goals><goal>run</goal></goals>
                 <configuration>
-                  <target>
+                  <target xmlns:if="ant:if">
                     <macrodef name="create-javadoc-webresource">
                       <attribute name="groupId"/>
                       <attribute name="artifactId"/>
@@ -311,6 +311,11 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
                             excludes="**/MANIFEST.MF,**/sitemap-index.xml"
                           />
                         </zip>
+                        <insert-google-analytics-tracking
+                          if:true="${build.isSnapshot}"
+                          file="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar"
+                          googleAnalyticsTrackingId="${google.analytics.trackingId}"
+                        />
                       </sequential>
                     </macrodef>
                     <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><classifier>javadoc</classifier> -->
