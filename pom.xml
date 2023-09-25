@@ -29,12 +29,12 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><version>1.10.0</version>
+  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><version>1.10.0-POST-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <properties>
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
-    <project.build.outputTimestamp>2023-09-25T07:39:31Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
     <module.name>com.semanticcms.core.docs</module.name>
     <!-- Never stage snapshot, see https://stackoverflow.com/a/39139979 -->
     <nexus.skipNexusStagingDeployMojo>${build.isSnapshot}</nexus.skipNexusStagingDeployMojo>
@@ -74,7 +74,7 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/semanticcms-core-docs.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/semanticcms-core-docs.git</developerConnection>
     <url>https://github.com/ao-apps/semanticcms-core-docs</url>
-    <tag>semanticcms-core-docs-1.10.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
