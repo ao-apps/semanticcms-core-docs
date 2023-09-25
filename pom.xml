@@ -29,12 +29,12 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><version>1.10.0-SNAPSHOT</version>
+  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><version>1.10.0</version>
   <packaging>war</packaging>
 
   <properties>
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
-    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-09-25T07:39:31Z</project.build.outputTimestamp>
     <module.name>com.semanticcms.core.docs</module.name>
     <!-- Never stage snapshot, see https://stackoverflow.com/a/39139979 -->
     <nexus.skipNexusStagingDeployMojo>${build.isSnapshot}</nexus.skipNexusStagingDeployMojo>
@@ -74,7 +74,7 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/semanticcms-core-docs.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/semanticcms-core-docs.git</developerConnection>
     <url>https://github.com/ao-apps/semanticcms-core-docs</url>
-    <tag>HEAD</tag>
+    <tag>semanticcms-core-docs-1.10.0</tag>
   </scm>
 
   <issueManagement>
@@ -271,9 +271,9 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
                 <configuration>
                   <target xmlns:if="ant:if">
                     <macrodef name="create-javadoc-webresource">
-                      <attribute name="groupId"/>
-                      <attribute name="artifactId"/>
-                      <attribute name="path"/>
+                      <attribute name="groupId" />
+                      <attribute name="artifactId" />
+                      <attribute name="path" />
                       <sequential>
                         <!--
                           As a requirement for reproducible builds, much care is taken to use the original timestamp
@@ -285,37 +285,13 @@ along with semanticcms-core-docs.  If not, see <https://www.gnu.org/licenses/>.
                         -->
                         <!-- Create ZIP directories to patch into new ZIP -->
                         <taskdef resource="com/aoapps/ant/tasks/antlib.xml" />
-                        <create-zipped-directories
-                          referenceZip="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
-                          referencePath="META-INF/"
-                          generateZip="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip"
-                          generatePath="META-INF/resources@{path}/apidocs/"
-                        />
-                        <zip
-                          destfile="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar"
-                          keepcompression="true"
-                          encoding="UTF8"
-                          whenempty="fail"
-                          duplicate="fail"
-                        >
-                          <zipfileset
-                            src="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip"
-                          />
-                          <zipfileset
-                            src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
-                            includes="META-INF/MANIFEST.MF,META-INF/sitemap-index.xml"
-                          />
-                          <zipfileset
-                            src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
-                            prefix="META-INF/resources@{path}/apidocs"
-                            excludes="**/MANIFEST.MF,**/sitemap-index.xml"
-                          />
+                        <create-zipped-directories referenceZip="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar" referencePath="META-INF/" generateZip="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip" generatePath="META-INF/resources@{path}/apidocs/" />
+                        <zip destfile="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar" keepcompression="true" encoding="UTF8" whenempty="fail" duplicate="fail">
+                          <zipfileset src="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip" />
+                          <zipfileset src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar" includes="META-INF/MANIFEST.MF,META-INF/sitemap-index.xml" />
+                          <zipfileset src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar" prefix="META-INF/resources@{path}/apidocs" excludes="**/MANIFEST.MF,**/sitemap-index.xml" />
                         </zip>
-                        <insert-google-analytics-tracking
-                          if:true="${build.isSnapshot}"
-                          file="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar"
-                          googleAnalyticsTrackingId="${google.analytics.trackingId}"
-                        />
+                        <insert-google-analytics-tracking if:true="${build.isSnapshot}" file="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar" googleAnalyticsTrackingId="${google.analytics.trackingId}" />
                       </sequential>
                     </macrodef>
                     <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><classifier>javadoc</classifier> -->
