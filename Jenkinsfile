@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 /*
  * semanticcms-core-docs - Documentation runner for Java API for modeling web page content and relationships.
- * Copyright (C) 2021, 2022, 2023, 2024  AO Industries, Inc.
+ * Copyright (C) 2021, 2022, 2023, 2024, 2025  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -152,9 +152,6 @@ def upstreamProjects = [
  *                                                                                        *
  * mavenOpts            The Maven Java options.                                           *
  *                      Defaults to '-Djansi.force' for colorful logs                     *
- *                                                                                        *
- * mavenOptsJdk16       The Maven Java options for JDK 16+.                               *
- *                      Defaults to exporting Java compiler for rewrite-maven-plugin.     *
  *                                                                                        *
  * extraProfiles        An array of additional profiles to pass to Maven.                 *
  *                      Defaults to []                                                    *
@@ -480,10 +477,6 @@ if (!binding.hasVariable('maven')) {
 }
 if (!binding.hasVariable('mavenOpts')) {
   binding.setVariable('mavenOpts', '-Djansi.force')
-}
-if (!binding.hasVariable('mavenOptsJdk16')) {
-  // See https://docs.openrewrite.org/getting-started/getting-started#running-on-jdk-16-and-newer
-  binding.setVariable('mavenOptsJdk16', '--add-exports jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.jvm=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED')
 }
 if (!binding.hasVariable('extraProfiles')) {
   binding.setVariable('extraProfiles', [])
@@ -832,7 +825,7 @@ or any build that adds or removes build artifacts."""
               dir(projectDir) {
                 withMaven(
                   maven: maven,
-                  mavenOpts: "${jdk == '11' ? mavenOpts : "$mavenOpts $mavenOptsJdk16"}",
+                  mavenOpts: mavenOpts,
                   mavenLocalRepo: ".m2/repository-jdk-$jdk",
                   jdk: "jdk-$jdk"
                 ) {
@@ -887,7 +880,7 @@ or any build that adds or removes build artifacts."""
               dir(projectDir) {
                 withMaven(
                   maven: maven,
-                  mavenOpts: "${testJdk == '11' ? mavenOpts : "$mavenOpts $mavenOptsJdk16"}",
+                  mavenOpts: mavenOpts,
                   mavenLocalRepo: ".m2/repository-jdk-$jdk",
                   jdk: "jdk-$testJdk"
                 ) {
@@ -912,7 +905,7 @@ or any build that adds or removes build artifacts."""
       steps {
         // Steps moved to separate function to avoid "Method too large"
         // See https://stackoverflow.com/a/47631522
-        deploySteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mavenOptsJdk16, mvnCommon)
+        deploySteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mvnCommon)
       }
     }
     stage('SonarQube analysis') {
@@ -928,7 +921,7 @@ or any build that adds or removes build artifacts."""
       steps {
         // Steps moved to separate function to avoid "Method too large"
         // See https://stackoverflow.com/a/47631522
-        sonarQubeAnalysisSteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mavenOptsJdk16, mvnCommon)
+        sonarQubeAnalysisSteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mvnCommon)
       }
     }
     stage('Quality Gate') {
@@ -975,7 +968,7 @@ or any build that adds or removes build artifacts."""
 
 // Steps moved to separate function to avoid "Method too large"
 // See https://stackoverflow.com/a/47631522
-void deploySteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mavenOptsJdk16, mvnCommon) {
+void deploySteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mvnCommon) {
   // Make sure working tree not modified by build or test
   sh checkTreeUnmodifiedScriptBuild(niceCmd)
   dir(projectDir) {
@@ -996,7 +989,7 @@ void deploySteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mavenOptsJdk1
     sh moveSurefireReportsScript()
     withMaven(
       maven: maven,
-      mavenOpts: "${deployJdk == '11' ? mavenOpts : "$mavenOpts $mavenOptsJdk16"}",
+      mavenOpts: mavenOpts,
       mavenLocalRepo: ".m2/repository-jdk-$deployJdk",
       jdk: "jdk-$deployJdk"
     ) {
@@ -1011,13 +1004,13 @@ void deploySteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mavenOptsJdk1
 
 // Steps moved to separate function to avoid "Method too large"
 // See https://stackoverflow.com/a/47631522
-void sonarQubeAnalysisSteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mavenOptsJdk16, mvnCommon) {
+void sonarQubeAnalysisSteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mvnCommon) {
   // Not doing shallow: sh "${niceCmd}git fetch --unshallow || true" // SonarQube does not currently support shallow fetch
   dir(projectDir) {
     withSonarQubeEnv(installationName: 'AO SonarQube') {
       withMaven(
         maven: maven,
-        mavenOpts: "${deployJdk == '11' ? mavenOpts : "$mavenOpts $mavenOptsJdk16"}",
+        mavenOpts: mavenOpts,
         mavenLocalRepo: ".m2/repository-jdk-$deployJdk",
         jdk: "jdk-$deployJdk"
       ) {
