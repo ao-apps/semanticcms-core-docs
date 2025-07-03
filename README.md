@@ -21,7 +21,7 @@ Documentation runner for Java API for modeling web page content and relationship
 ## Project Links
 * [Project Home](https://semanticcms.com/core/docs/)
 * [Changelog](https://semanticcms.com/core/docs/changelog)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-core-docs)
+* [Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-core-docs)
 * [GitHub](https://github.com/ao-apps/semanticcms-core-docs)
 
 ## Contact Us
